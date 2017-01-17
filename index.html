@@ -3,5 +3,15 @@ layout: default
 ---
 
 <h1>Planets of the universe</h1>
-<p>Lots of planets in the universe</p>
-	
+<p>A planet is an astronomical body orbiting a star or stellar remnant</p>
+
+<h2>Recently discovered planets</h2>
+
+<ul>
+  {% for news in site.categories.recently-discovered %}
+	<li>
+    <a href="">{{news.title}}</a>
+    <p>{{news.meta}}</p>
+  </li>
+  {% endfor %}
+</ul>	
